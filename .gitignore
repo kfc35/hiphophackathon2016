@@ -1,0 +1,12 @@
+#Node stuff
+node_modules/
+
+# OSX litter
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+*.swp
+
+*.pyc
