@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+        <meta http-equiv="charset" content="ISO-8859-1" />
+        <meta http-equiv="content-language" content="English" />
+        <meta http-equiv="vw96.object type" content="Document" />
+        <meta name="resource-type" content="document" />
+        <meta name="distribution" content="Global" />
+        <meta name="rating" content="General" />
+        <meta name="robots" content="all" />
+        <meta name="revist-after" content="2 days" />
+        <link rel="shortcut icon" href="http://www.ohhla.com/favicon.ico" />
+        <title>The Original Hip-Hop (Rap) Lyrics Archive</title>
+
+        <!-- link rel="stylesheet" type="text/css" href="http://ohhla.com/files/main.css" / -->
+	        <!-- BEGIN SITE ANALYTICS //-->
+        <script type="text/javascript">
+        if (typeof siteanalytics == 'undefined') { siteanalytics = {}; };
+        siteanalytics.gn_tracking_defaults = {google: '',comscore: {},quantcast:''};
+        siteanalytics.website_id = 180;
+        siteanalytics.cdn_hostname = 'cdn.siteanalytics.evolvemediametrics.com';
+        </script>
+        <script type="text/javascript" src='http://cdn.siteanalytics.evolvemediametrics.com/js/siteanalytics.js'></script>
+        <!-- END SITE ANALYTICS //-->
+
+</head>
+
+<body>
+
+<a href="javascript: history.go(-1)">Back to the previous page</a>
+
+<div>
+</div>
+
+<div style="width: 720px; text-align: center; color: #ff0000; font-weight: bold; font-size: 1em;">
+
+                       <!-- AddThis Button BEGIN -->
+                                <div class="addthis_toolbox addthis_default_style" style="margin: auto 0 auto 0; padding-left: 185px;">
+                                <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+                                <a class="addthis_button_tweet"></a>
+                                <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+                                <a class="addthis_counter addthis_pill_style"></a>
+                                </div>
+                                <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e8ea9f77f69af2f"></script>
+                        <!-- AddThis Button END -->
+
+</div>
+
+<br />
+
+<div style="float: left; min-width: 560px;">
+<pre>
+Artist: Drake
+Album:  Views from the 6
+Song:   Summer Sixteen
+Typed by: AZ Lyrics
+
+Looking, looking, looking...
+
+Looking for revenge
+All summer sixteen
+All summer sixteen
+Playing dirty not clean
+Out in front of Four Seasons
+Looking like a damn football team
+All in the same thing
+All repping one thing
+Looking for revenge
+
+To do what you couldn't do
+Tell Obama that my verses are just like the whips that he in
+They bulletproof
+Minus twenty we in Pitfield
+That Kai's kitchen in a Canada Goose
+Famous as fuck but I'm still in the cut when they round up the troops
+I'm just a sicko a real sicko when you get to know me nigga
+I let the diss record drop, you was staying right below me, nigga
+We must have played it a hundred times, you was going to bed
+Why would I put on a vest I expect you to aim for the head?
+I coulda killed you the first time
+You don't have to try to say it louder nigga
+Trust, we heard you the first time
+It's nothing personal I would have done it to anyone
+And I blame where I came from
+And I blame all my day ones
+You know Chubbs like Draymond
+You better off not saying nothing
+Them boys they a handful
+Then I hit 'em with the Hotline
+Chris Breezy with the dance moves
+Mo-G with the dance moves
+Ave Boy with the dance moves
+Jimi Hendrix with the solo
+Those the strings that you can't pull
+Yeah, and I could really dish it out
+Come and get it from the source
+Fuck with all the word of mouth
+Golden State running practice at my house
+Nigga, what am I about?
+You gon' really feel it now
+I'm out here…
+
+Looking for revenge
+All summer sixteen
+All summer sixteen
+Playing dirty not clean
+Out in front of Four Seasons
+Looking like a damn football team
+All repping one thing
+Looking for revenge
+
+All you boys in the new Toronto want to be me a little
+All your exes know I like my O's with a V in the middle
+You would love it if I went away or didn't say nothing else
+How am I keeping it real by keeping this shit to myself?
+You was never gang, gang, gang, gang, you was never one of us
+Had us fooled for a minute there, now we done all grown up
+But I'm better off anyway, y'all never gon' finish Drake
+Say you seeing 'bout it when you see me man y'all never home anyway
+Thought of things that you shoulda said, said things that you shouldn't say
+We even gave you the whole money play and y'all still broke to this day
+"Oh it's your time now" yeah, that's what everybody say
+I used to wanna be on Roc-A-Fella then I turned into Jay
+Now I got a house in LA, Now I got a bigger pool than Ye
+And look man, Ye's pool is nice, mine's just big is what I'm saying
+I'm that nigga's what I'm saying
+Getting things done around here
+How you let me run it down here
+I'm not even from around here
+Six, six, six, six, six soon as I'm back in the city they throw a parade
+I might get a key to the city and give it to Wayne
+Or give it to one of the young boys to carry the wave
+Yeah, so trust me, they'll be out here...
+
+Looking for revenge
+All summer sixteen
+All summer sixteen
+Playing dirty not clean
+Out in front of Four Seasons
+Looking like a damn football team
+All in the same thing
+All repping one thing
+Looking for...</pre>
+</div>
+
+<div style="float: left;">
+</div>
+
+</body></html>

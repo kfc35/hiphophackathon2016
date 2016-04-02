@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+        <meta http-equiv="charset" content="ISO-8859-1" />
+        <meta http-equiv="content-language" content="English" />
+        <meta http-equiv="vw96.object type" content="Document" />
+        <meta name="resource-type" content="document" />
+        <meta name="distribution" content="Global" />
+        <meta name="rating" content="General" />
+        <meta name="robots" content="all" />
+        <meta name="revist-after" content="2 days" />
+        <link rel="shortcut icon" href="http://www.ohhla.com/favicon.ico" />
+        <title>The Original Hip-Hop (Rap) Lyrics Archive</title>
+
+        <!-- link rel="stylesheet" type="text/css" href="http://ohhla.com/files/main.css" / -->
+	        <!-- BEGIN SITE ANALYTICS //-->
+        <script type="text/javascript">
+        if (typeof siteanalytics == 'undefined') { siteanalytics = {}; };
+        siteanalytics.gn_tracking_defaults = {google: '',comscore: {},quantcast:''};
+        siteanalytics.website_id = 180;
+        siteanalytics.cdn_hostname = 'cdn.siteanalytics.evolvemediametrics.com';
+        </script>
+        <script type="text/javascript" src='http://cdn.siteanalytics.evolvemediametrics.com/js/siteanalytics.js'></script>
+        <!-- END SITE ANALYTICS //-->
+
+</head>
+
+<body>
+
+<a href="javascript: history.go(-1)">Back to the previous page</a>
+
+<div>
+</div>
+
+<div style="width: 720px; text-align: center; color: #ff0000; font-weight: bold; font-size: 1em;">
+
+                       <!-- AddThis Button BEGIN -->
+                                <div class="addthis_toolbox addthis_default_style" style="margin: auto 0 auto 0; padding-left: 185px;">
+                                <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+                                <a class="addthis_button_tweet"></a>
+                                <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+                                <a class="addthis_counter addthis_pill_style"></a>
+                                </div>
+                                <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e8ea9f77f69af2f"></script>
+                        <!-- AddThis Button END -->
+
+</div>
+
+<br />
+
+<div style="float: left; min-width: 560px;">
+<pre>
+Artist: Wiz Khalifa f/ Travi$ Scott
+Album:  Khalifa
+Song:   Bake Sale
+Typed by: AZ Lyrics
+
+[Intro]
+Mistercap
+You ready again bro?
+Yeah!
+TGOD Mafia
+Straight out of Pittsburgh, mane
+Can't smoke weed to it
+Don't doubt this nigga
+I don't wanna listen to it
+He the truth, nigga
+
+[Chorus: Travi$ Scott]
+At my bake sale yeah
+We can't wait to bake, hell yeah
+Laughin' off this drank, hell yeah
+Lovin', havin' sex, hell yeah
+All day, hell yeah
+We've been countin' cake, hell yeah
+Puffin' on this dank, hell yeah
+We can't wait to bake, hell yeah
+
+I've been on the phone, hell yeah
+Gettin' calls from home, hell yeah
+So I started up a bake sale, yeah
+They know I got all the cake, hell yeah
+
+[Verse 1: Wiz Khalifa]
+Cookies and OG
+Come to my crib, we blow by the Os
+Kush, you already know
+It ain't in a joint, we don't even smoke it
+I keep a bitch gettin' stoned
+We wakin' and bakin', puffin' a J
+She told me that I'm her new favorite
+How much do we blaze? A hundred a day
+Say they got the good but what the pack smell like?
+Feel like it's a dream but now we back to real life
+It's incredible
+I got flowers, wax, inhalers, edibles
+All shit you never saw
+And it's all at my bake sale
+Roll another one, help me think well
+I stay with the plane
+I'm slangin' them thangs, you know we ain't new to this
+Let's turn on the stove and call up some hoes
+Let's roll up and do this shit
+
+[Chorus: Travi$ Scott]
+At my bake sale yeah
+We can't wait to bake, hell yeah
+Laughin' off this drank, hell yeah
+Lovin', havin' sex, hell yeah
+All day, hell yeah
+We've been countin' cake, hell yeah
+Puffin' on this dank, hell yeah
+We can't wait to bake, hell yeah
+
+[Verse 2: Wiz Khalifa]
+I just rolled a pound at my bake sale
+Bitches goin' down at my bake sale
+I just keep it real, I don't fake well
+Niggas say they on, well I can't tell
+I just fucked three hoes, I don't know their name
+Pussy come and pussy go, it's all the same
+I'm rollin' up the weed while I count the cake
+Naked bitches in the kitchen, shake 'n' bake
+What you think? I'm on this dank, I'm off that drank
+I often blaze an ounce a day
+You at my crib, it's no mistake
+Rollin' papers, rollin' trays, shattered pieces
+Glasses, lighters, torches, spark it, anything that matters
+You can get it all right here at my
+
+[Chorus: Travi$ Scott]
+At my bake sale yeah
+We can't wait to bake, hell yeah
+Laughin' off this drank, hell yeah
+Lovin', havin' sex, hell yeah
+All day, hell yeah
+We've been countin' cake, hell yeah
+Puffin' on this dank, hell yeah
+We can't wait to bake, hell yeah
+
+[Wiz Khalifa & Travi$ Scott]
+Roll, roll one up
+Got a J, make a plane, now we goin' up
+All day, every day, we ain't roll enough
+Get a pound, break it down, get them cones though
+It's goin' down, goin' down
+I'ma roll one up
+Get a J, make a plane, now we goin' up
+All day, every day, we ain't smoke enough
+I'm on the K, K, stoned as fuck
+At my bake sale yeah</pre>
+</div>
+
+<div style="float: left;">
+</div>
+
+</body></html>

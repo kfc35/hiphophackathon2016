@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+        <meta http-equiv="charset" content="ISO-8859-1" />
+        <meta http-equiv="content-language" content="English" />
+        <meta http-equiv="vw96.object type" content="Document" />
+        <meta name="resource-type" content="document" />
+        <meta name="distribution" content="Global" />
+        <meta name="rating" content="General" />
+        <meta name="robots" content="all" />
+        <meta name="revist-after" content="2 days" />
+        <link rel="shortcut icon" href="http://www.ohhla.com/favicon.ico" />
+        <title>The Original Hip-Hop (Rap) Lyrics Archive</title>
+
+        <!-- link rel="stylesheet" type="text/css" href="http://ohhla.com/files/main.css" / -->
+	        <!-- BEGIN SITE ANALYTICS //-->
+        <script type="text/javascript">
+        if (typeof siteanalytics == 'undefined') { siteanalytics = {}; };
+        siteanalytics.gn_tracking_defaults = {google: '',comscore: {},quantcast:''};
+        siteanalytics.website_id = 180;
+        siteanalytics.cdn_hostname = 'cdn.siteanalytics.evolvemediametrics.com';
+        </script>
+        <script type="text/javascript" src='http://cdn.siteanalytics.evolvemediametrics.com/js/siteanalytics.js'></script>
+        <!-- END SITE ANALYTICS //-->
+
+</head>
+
+<body>
+
+<a href="javascript: history.go(-1)">Back to the previous page</a>
+
+<div>
+</div>
+
+<div style="width: 720px; text-align: center; color: #ff0000; font-weight: bold; font-size: 1em;">
+
+                       <!-- AddThis Button BEGIN -->
+                                <div class="addthis_toolbox addthis_default_style" style="margin: auto 0 auto 0; padding-left: 185px;">
+                                <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+                                <a class="addthis_button_tweet"></a>
+                                <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+                                <a class="addthis_counter addthis_pill_style"></a>
+                                </div>
+                                <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e8ea9f77f69af2f"></script>
+                        <!-- AddThis Button END -->
+
+</div>
+
+<br />
+
+<div style="float: left; min-width: 560px;">
+<pre>
+Artist: iHeartMemphis
+Album:  Lean and Dabb (S)
+Song:   Lean and Dabb
+Typed by: Musixmatch
+
+Lean and dab, lean and dab
+Lean and dab, lean and dab
+Lean and dab, lean and dab
+Lean and dab, lean and dab
+
+...
+Wake up in the morning then I dab
+Had to pull up on the block cause today I get to whip
+And you know I talk drop and my car's name is nae-nae
+
+Had to hit the Quan cause today is a good day
+Slide to the left, slide to the right
+Walk it to the front, bop it to the back
+Slide to the left, slide to the right
+
+Walk it to the front, bop it to the back
+Lean and dab, lean and dab
+Lean and dab, lean and dab
+Lean and dab, lean and dab
+
+Lean and dab, lean and dab
+...
+Slide to the left, slide to the left
+Slide to the left, hold on hit the folks
+Slide to the right, slide to the right
+Slide to the right, make it drop
+Walk it to the front, walk it to the front
+Walk it to the front, watch me whip
+
+Bop it to the back, bop it to the back
+Bop it to the back, nae-nae, nae-nae
+Nah, let me keep going
+Show you how I lean, then dab
+Nice shoes, car clean cause it's sunny outside
+That mean I pull up with my top down
+I don't have a top now
+Mama told me never leave the house without my nightgown
+Mama I'm on BET so I can act hyped now
+On em like the WWE and lay the smackdown
+That's a lot to handle, how could he manage?
+Mr. Hit the Quan went viral, gigantic
+Hold up wait face it, go ahead pump your brakes fast
+Always used to dodge cops, riding around with no plate tags
+They can never catch me, driving like a taxi
+Waiting on my taxes, lights camera action
+Finna play Michael Jackson, [?] in a jacket
+Take it but I'm matching, y'all not in my bracket
+It's iHeart Memphis but I also love dabbing
+I done took off on em, I feel like a pilot
+I done took off on em, I don't care bout the mileage
+I'm so VIP all I know is private
+
+I'll take the steak, the strip, and the salad
+Cause growing up in Memphis, Tennessee I couldn't have it
+Lean and dab, lean and dab
+Lean and dab, lean and dab
+
+Lean and dab, lean and dab
+Lean and dab, lean and dab
+...
+Hit the Quan on em, hit the Quan on em
+Hit the Quan on em, hit the Quan on em
+Snap em up, pose, snap em up, pose
+Snap em up, pose, snap em up, pose
+Chop-a-chop chopped salad, chop-a-chop chop
+Chop-a-chop chopped salad, chop-a-chop chop
+You can google me, you can google me
+You can google me, you can google me</pre>
+</div>
+
+<div style="float: left;">
+</div>
+
+</body></html>
