@@ -5,6 +5,18 @@
   "scripts": {
     "start": "node ./bin/www"
   },
+  "repository" : { 
+    "type" : "git",
+    "url" : "https://github.com/kfc35/hiphophackathon2016"
+  },
+  "contributors" : [ 
+    {
+      "name": "Kevin Chen"
+    },
+    {
+      "name": "Jason Chen"
+    }
+  ],
   "dependencies": {
     "d3": "3.5.16",
     "body-parser": "~1.13.2",
