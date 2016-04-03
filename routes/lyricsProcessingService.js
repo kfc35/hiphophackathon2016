@@ -51,7 +51,7 @@ function processFieldForWordCount(jsonContent, fieldName, countObjects) {
   if (lyrics === undefined || lyrics === null) {
     return; //no lyrics to parse
   }
-  var lyricsWithoutPhraseBreaks = lyrics.replace("/", " ");
+  var lyricsWithoutPhraseBreaks = lyrics.replace(/\//g, " ");
   var lyricsWithoutSpecialCharsAndDoubleSpaces = lyricsWithoutPhraseBreaks
                                                   .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()"]/g, "")
                                                   .replace(/\s{2,}/g," ");
