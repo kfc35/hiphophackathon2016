@@ -100,13 +100,14 @@ function processLyricForBrandCount(lyrics, brandData, brandTotalCounts) {
     var brandSearchTermsWithoutSpaces = [];
     for (var j = 0; j < brandSearchTerms.length; j++) {
       var brandSearchTerm = brandSearchTerms[j];
-      if (brandSearchTerm.indexOf(" ") !== -1) {
+      if (brandSearchTerm.indexOf(" ") === -1) {
         brandSearchTermsWithoutSpaces.push(brandSearchTerm);
         continue;
       }
-      var brandSearchTermRegex = new RegExp("\s" + brandSearchTerm + "\s", 'ig');
-      var matchResult = lyrics.match(brandSearchTermRegex)
+      var brandSearchTermRegex = new RegExp(" " + brandSearchTerm + " ", "ig");
+      var matchResult = lyrics.match(brandSearchTermRegex);
       if (matchResult) {
+        //console.log("more than one match result!");
         brandTotalCounts[brand.id] += matchResult.length;
         lyrics = lyrics.replace(brandSearchTermRegex, " ");
       }
@@ -119,6 +120,7 @@ function processLyricForBrandCount(lyrics, brandData, brandTotalCounts) {
       //words are not double counted, since lyrics have the phrases removed in previous pass
       for (var k = 0; k < brandSearchTermsWithoutSpaces; k++) {
         var brandSearchTermWithoutSpaces = brandSearchTermsWithoutSpaces[k];
+        console.log("comparing " + brandSearchTermWithoutSpaces + " and " + word);
         if (brandSearchTermWithoutSpaces.toLowerCase() === word.toLowerCase()) {
             brandTotalCounts[brand.id]++;
         }
