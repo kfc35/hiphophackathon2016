@@ -598,6 +598,7 @@ module.exports = {words: [
 "want",
 "wants",
 "was",
+"wasn't",
 "wasnt",
 "way",
 "we",
