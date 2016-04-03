@@ -21,35 +21,39 @@ function transformLyricDataForD3() {
     "children": [
     ]
   };
+
+  //aggregate the brandTotalCount children
+  var brandTotalCountsAllSongs = [];
   for (var i = 0; i < lyricsData.length; i++) {
     var songData = lyricsData[i];
-    var songChild = {
-      "name": songData.songTitle,
-      "children": [
-      ]
-    }
+    // DON'T make subchildren of root by song.
     for (var word in songData.brandTotalCounts) {
       if (songData.brandTotalCounts.hasOwnProperty(word)) {
-        var size = produceSizeForBrandWordsBySong(songData.brandTotalCounts[word]);
-        if (size !== 0) {
-          songChild.children.push({
-            "name": word,
-            "size": size
-          });
-        }
+        brandTotalCountsAllSongs[word] = (brandTotalCountsAllSongs[word] ? 
+          brandTotalCountsAllSongs[word] + songData.brandTotalCounts[word] : 
+          songData.brandTotalCounts[word]);
       }
     }
-    root.children.push(songChild);
+  }
+
+  //parse through brand counts over all songs, attach to root.
+  for (var word in brandTotalCountsAllSongs) {
+    if (brandTotalCountsAllSongs.hasOwnProperty(word)) {
+      var size = produceSizeForBrandWordsBySong(brandTotalCountsAllSongs[word]);
+      if (size !== 0) {
+        root.children.push({
+          "name": word,
+          "size": size
+        });
+      }
+    }
   }
   return root;
 }
 
+//copy pasta function that may vary depending on aesthetics.
 function produceSizeForBrandWordsBySong(count) {
-  if (count <= 0) {
-    return 0;
-  } else {
-    return Math.pow(5, count - 1);
-  }
+  return count;
 }
 
 module.exports = router;
