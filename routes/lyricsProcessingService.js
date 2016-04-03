@@ -98,22 +98,29 @@ function processLyricForBrandCount(lyrics, brandData, brandTotalCounts) {
     var brandSearchTerms = [brand.canonicalBrandName].concat(brand.brandSynonyms);
 
     //Process brand search terms with SPACES first.
-    var brandSearchTermsWithSpaces = [];
+    var brandSearchTermsWithoutSpaces = [];
     for (var j = 0; j < brandSearchTerms.length; j++) {
       var brandSearchTerm = brandSearchTerms[j];
       if (brandSearchTerm.indexOf(" ")!== -1) {
+        brandSearchTermsWithoutSpaces.push(brandSearchTerm);
         continue;
       }
-      brandSearchTermWithSpaces.push(brandSearchTerm);
       var brandSearchTermRegex = new Regex("\s" + brandSearchTerm + "\s", 'ig');
       brandTotalCounts[brand.id] += lyrics.match(brandSearchTermRegex).length;
+      lyrics = lyrics.replace(brandSearchTermRegex, " ");
     }
 
     //Process brand search terms without spaces.
     var words = lyrics.split(" ");
     for (var j = 0; i < words.length; i++) {
       var word = words[i];
-      //TODO Ensure word is not double counted.
+      //words are not double counted, since lyrics have the phrases removed in previous pass
+      for (var k = 0; k < brandSearchTermsWithoutSpaces; k++) {
+        var brandSearchTermWithoutSpaces = brandSearchTermWithoutSpaces[k];
+        if (brandSearchTermWithoutSpace.toLowerCase() === word.toLowerCase()) {
+            brandTotalCounts[brand.id]++;
+        }
+      }
     }
   }
 }
