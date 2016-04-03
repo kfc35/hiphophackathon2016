@@ -21,7 +21,45 @@ function transformLyricDataForD3() {
     ]
   };
   for (var i = 0; i < lyricsData.length; i++) {
-    var lyricData
+    var songData = lyricsData[i];
+    var songChild = {
+      "name": songData.songTitle,
+      "children": [
+      ]
+    }
+    for (var word in songData.brandTotalCounts) {
+      if (songData.brandTotalCounts.hasOwnProperty(word)) {
+        var size = produceSizeForBrandWordsBySong(songData.brandTotalCounts[word]);
+        if (size !== 0) {
+          songChild.children.push({
+            "name": word,
+            "size": size
+          });
+        }
+      }
+    }
+    root.children.push(songChild);
+  }
+  return root;
+}
+
+function produceSizeForBrandWordsBySong(count) {
+  /*switch(count) {
+    case 0:
+      return 0;
+    case 1:
+      return 100;
+    case 2:
+      return 200;
+    case 3:
+      return 500;
+    default:
+      return 100 + Math.pow(5, count - 1)
+  }*/
+  if (count <= 0) {
+    return 0;
+  } else {
+    return Math.pow(4, count - 1);
   }
 }
 
@@ -47,7 +85,7 @@ function produceGraph(window) {
   
   //d3.json("flare.json", function(error, root) {
     //if (error) throw error;
-    root = {
+    /*root = {
  "name": "flare",
  "children": [
   {
@@ -426,7 +464,8 @@ function produceGraph(window) {
    ]
   }
  ]
-};
+};*/
+    var root = transformLyricDataForD3();
     var node = svg.selectAll(".node")
         .data(bubble.nodes(classes(root))
         .filter(function(d) { return !d.children; }))
