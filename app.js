@@ -33,7 +33,7 @@ app.use('/lyricsData', lyricsData);
 app.use('/kanyeBrandsbySong', kanyeBrandMentionsBySong);
 app.use('/kanyeBrandsOverAllSongs', kanyeBrandMentionsOverAllSongs);
 app.use('/kanyeCategoriesBySong', kanyeBrandCategoriesBySong);
-app.use('/kanyeBrandCategoriesOverAllSongs', kanyeBrandCategoriesOverAllSongs);
+app.use('/kanyeCategoriesOverAllSongs', kanyeBrandCategoriesOverAllSongs);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
