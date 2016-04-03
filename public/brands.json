@@ -1,5 +1,15 @@
 [
   {
+    "canonicalBrandName": "Polo",
+    "brandSynonyms": [
+      "Ralph",
+      "Ralph Lauren",
+      "RL",
+      "RRL"
+    ],
+    "category": "sportswear"
+  },
+  {
     "canonicalBrandName": "Gap",
     "brandSynonyms": [],
     "category": "sportswear"
@@ -63,7 +73,8 @@
       "Louis",
       "Vuitton",
       "LV",
-      "L-V"
+      "L-V",
+      "Louis V"
     ],
     "category": "luxury"
   },
@@ -74,6 +85,10 @@
       "Rolly",
       "Rollys",
       "Rollie",
+      "Rolie",
+      "Roley",
+      "Rolies",
+      "Roleys",
       "Rolexes",
       "Rolexs"
     ],
