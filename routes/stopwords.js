@@ -673,7 +673,5 @@ module.exports = {words: [
 "6",
 "7",
 "8",
-"9",
-"i'm", //added this
-"wasn't", //add apostrophe
+"9"
 ]}
