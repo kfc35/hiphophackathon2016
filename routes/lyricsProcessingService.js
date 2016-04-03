@@ -3,7 +3,7 @@ var fs = require('fs');
 var stopwords = require('./stopwords');
 
 function readBrands() {
-  return fs.readFileSync(path.join(__dirname, "../public/brands.json"));
+  return JSON.parse(fs.readFileSync(path.join(__dirname, "../public/brands.json")));
 }
 
 /* Reads all lyric files and parses them */
@@ -49,13 +49,13 @@ function processLyricalContent(jsonContent, brandData) {
 
   return {
     songTitle: jsonContent.songTitle,
-    totalCounts: totalCounts
+    //totalCounts: totalCounts,
     //introCounts: introCounts,
     //verseCounts: verseCounts,
     //chorusCounts: chorusCounts,
     //bridgeCounts: bridgeCounts,
     //outroCounts: outroCounts
-    //brandTotalCounts: brandTotalCounts
+    brandTotalCounts: brandTotalCounts
   };
 }
 
@@ -70,7 +70,7 @@ function processFieldForWordCount(jsonContent, fieldName, countObjects, brandDat
                                                   .replace(/\s{2,}/g," ");
   /* Should check for brand counts HERE, before spaces are removed.
   */
-
+  processLyricForBrandCount(lyricsWithoutSpecialCharsAndDoubleSpaces, brandData, brandTotalCounts);
   processLyricForTotalCounts(lyricsWithoutSpecialCharsAndDoubleSpaces, countObjects);
 }
 
@@ -96,28 +96,30 @@ function processLyricForBrandCount(lyrics, brandData, brandTotalCounts) {
   for (var i = 0; i < brandData.length; i++) {
     var brand = brandData[i];
     var brandSearchTerms = [brand.canonicalBrandName].concat(brand.brandSynonyms);
-
     //Process brand search terms with SPACES first.
     var brandSearchTermsWithoutSpaces = [];
     for (var j = 0; j < brandSearchTerms.length; j++) {
       var brandSearchTerm = brandSearchTerms[j];
-      if (brandSearchTerm.indexOf(" ")!== -1) {
+      if (brandSearchTerm.indexOf(" ") !== -1) {
         brandSearchTermsWithoutSpaces.push(brandSearchTerm);
         continue;
       }
-      var brandSearchTermRegex = new Regex("\s" + brandSearchTerm + "\s", 'ig');
-      brandTotalCounts[brand.id] += lyrics.match(brandSearchTermRegex).length;
-      lyrics = lyrics.replace(brandSearchTermRegex, " ");
+      var brandSearchTermRegex = new RegExp("\s" + brandSearchTerm + "\s", 'ig');
+      var matchResult = lyrics.match(brandSearchTermRegex)
+      if (matchResult) {
+        brandTotalCounts[brand.id] += matchResult.length;
+        lyrics = lyrics.replace(brandSearchTermRegex, " ");
+      }
     }
 
     //Process brand search terms without spaces.
     var words = lyrics.split(" ");
-    for (var j = 0; i < words.length; i++) {
-      var word = words[i];
+    for (var j = 0; j < words.length; j++) {
+      var word = words[j];
       //words are not double counted, since lyrics have the phrases removed in previous pass
       for (var k = 0; k < brandSearchTermsWithoutSpaces; k++) {
-        var brandSearchTermWithoutSpaces = brandSearchTermWithoutSpaces[k];
-        if (brandSearchTermWithoutSpace.toLowerCase() === word.toLowerCase()) {
+        var brandSearchTermWithoutSpaces = brandSearchTermsWithoutSpaces[k];
+        if (brandSearchTermWithoutSpaces.toLowerCase() === word.toLowerCase()) {
             brandTotalCounts[brand.id]++;
         }
       }
