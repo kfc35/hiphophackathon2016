@@ -14,6 +14,8 @@ router.get('/', function(req, res, next) {
   });
 });
 
+/*TODO this is basically the same lyric as kanyeBrandMentionsBySong, but using the category
+ *sub object. We should extract the common functionality to a service. */
 function transformLyricDataForD3() {
   var lyricsData = lyricsProcessingService.readFiles();
   var root = {
@@ -31,9 +33,9 @@ function transformLyricDataForD3() {
       ]
     }
     //For each song, calculate brand mentions, attach under song child
-    for (var word in songData.brandTotalCounts) {
-      if (songData.brandTotalCounts.hasOwnProperty(word)) {
-        var size = produceSizeForBrandWordsBySong(songData.brandTotalCounts[word]);
+    for (var word in songData.brandCategoryCounts) {
+      if (songData.brandCategoryCounts.hasOwnProperty(word)) {
+        var size = produceSizeForBrandWordsBySong(songData.brandCategoryCounts[word]);
         if (size !== 0) {
           songChild.children.push({
             "name": word,

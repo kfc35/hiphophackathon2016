@@ -31,21 +31,22 @@ function processLyricalContent(jsonContent, brandData) {
   outroCounts = {};
   totalCounts = {};
   brandTotalCounts = {};
+  brandCategoryCounts = {};
   //init brandTotalCounts
   for (var i = 0; i < brandData.length; i++) {
     var brand = brandData[i];
     brandTotalCounts[brand.id] = 0;
   }
   
-  processFieldForWordCount(jsonContent, "intro", [introCounts, totalCounts], brandData, brandTotalCounts);
+  processFieldForWordCount(jsonContent, "intro", [introCounts, totalCounts], brandData, brandTotalCounts, brandCategoryCounts);
   for (var i = 1; i < 10; i++) {
-    processFieldForWordCount(jsonContent, "verse" + i, [verseCounts, totalCounts], brandData, brandTotalCounts);
+    processFieldForWordCount(jsonContent, "verse" + i, [verseCounts, totalCounts], brandData, brandTotalCounts, brandCategoryCounts);
   }
   for (var i = 1; i < 10; i++) {
-    processFieldForWordCount(jsonContent, "chorus" + i, [chorusCounts, totalCounts], brandData, brandTotalCounts);
+    processFieldForWordCount(jsonContent, "chorus" + i, [chorusCounts, totalCounts], brandData, brandTotalCounts, brandCategoryCounts);
   }
-  processFieldForWordCount(jsonContent, "bridge", [bridgeCounts, totalCounts], brandData, brandTotalCounts);
-  processFieldForWordCount(jsonContent, "outro", [outroCounts, totalCounts], brandData, brandTotalCounts);
+  processFieldForWordCount(jsonContent, "bridge", [bridgeCounts, totalCounts], brandData, brandTotalCounts, brandCategoryCounts);
+  processFieldForWordCount(jsonContent, "outro", [outroCounts, totalCounts], brandData, brandTotalCounts, brandCategoryCounts);
 
   return {
     songTitle: jsonContent.songTitle,
@@ -55,11 +56,12 @@ function processLyricalContent(jsonContent, brandData) {
     //chorusCounts: chorusCounts,
     //bridgeCounts: bridgeCounts,
     //outroCounts: outroCounts
-    brandTotalCounts: brandTotalCounts
+    brandTotalCounts: brandTotalCounts,
+    brandCategoryCounts: brandCategoryCounts
   };
 }
 
-function processFieldForWordCount(jsonContent, fieldName, countObjects, brandData, brandTotalCounts) {
+function processFieldForWordCount(jsonContent, fieldName, countObjects, brandData, brandTotalCounts, brandCategoryCounts) {
   lyrics = jsonContent[fieldName];
   if (lyrics === undefined || lyrics === null) {
     return; //no lyrics to parse
@@ -71,7 +73,7 @@ function processFieldForWordCount(jsonContent, fieldName, countObjects, brandDat
                                                   .replace(/\s{2,}/g," ");
   /* Should check for brand counts HERE, before spaces are removed.
   */
-  processLyricForBrandCount(lyricsWithoutSpecialCharsAndDoubleSpaces, brandData, brandTotalCounts);
+  processLyricForBrandCount(lyricsWithoutSpecialCharsAndDoubleSpaces, brandData, brandTotalCounts, brandCategoryCounts);
   processLyricForTotalCounts(lyricsWithoutSpecialCharsAndDoubleSpaces, countObjects);
 }
 
@@ -85,14 +87,14 @@ function processLyricForTotalCounts(lyrics, countObjects) {
     for (var j = 0; j < countObjects.length; j++) {
       var countObject = countObjects[j];
       var index = word.toLowerCase();
+      // clean this up, complicated to understand.
       countObject[index] = 
         (countObject[index] === undefined || countObject[index] === null ? 1 : countObject[index] + 1);
-      //to get an accurate count for brand count, we should not double count ones found under ones with spaces.
     }
   }
 }
 
-function processLyricForBrandCount(lyrics, brandData, brandTotalCounts) {
+function processLyricForBrandCount(lyrics, brandData, brandTotalCounts, brandCategoryCounts) {
   for (var i = 0; i < brandData.length; i++) {
     var brand = brandData[i];
     var brandSearchTerms = [brand.canonicalBrandName].concat(brand.brandSynonyms);
@@ -107,8 +109,16 @@ function processLyricForBrandCount(lyrics, brandData, brandTotalCounts) {
       var brandSearchTermRegex = new RegExp(" " + brandSearchTerm.replace(/[']/g, "") + " ", "ig");
       var matchResult = lyrics.match(brandSearchTermRegex);
       if (matchResult) {
-        //console.log("more than one match result!");
-        brandTotalCounts[brand.id] += matchResult.length;
+        //incrememnt total count and the category count for that brand.
+        //gotta clean dis up
+        brandTotalCounts[brand.id] += matchResult.length; //this was pre-init, so no need to do that if/then stuff.
+        if (brandCategoryCounts[brand.category]) {
+          brandCategoryCounts[brand.category] += matchResult.length;
+        } else {
+          brandCategoryCounts[brand.category] = matchResult.length;
+        }
+        
+        //Remove lyrics of the search term so that they arent double counted when searching for single words.
         lyrics = lyrics.replace(brandSearchTermRegex, " ");
       }
     }
@@ -121,7 +131,13 @@ function processLyricForBrandCount(lyrics, brandData, brandTotalCounts) {
       for (var k = 0; k < brandSearchTermsWithoutSpaces.length; k++) {
         var brandSearchTermWithoutSpaces = brandSearchTermsWithoutSpaces[k];
         if (brandSearchTermWithoutSpaces.toLowerCase().replace(/[']/g, "") === word.toLowerCase().replace(/[']/g, "")) {
-            brandTotalCounts[brand.id] += 1;
+          brandTotalCounts[brand.id] += 1;
+          //gotta clean this up
+          if (brandCategoryCounts[brand.category]) {
+            brandCategoryCounts[brand.category] += 1;
+          } else {
+            brandCategoryCounts[brand.category] = 1;
+          }
         }
       }
     }

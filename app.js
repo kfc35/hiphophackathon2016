@@ -9,6 +9,8 @@ var routes = require('./routes/index');
 var lyricsData = require('./routes/lyricsData');
 var kanyeBrandMentionsBySong = require('./routes/kanyeBrandMentionsBySong');
 var kanyeBrandMentionsOverAllSongs = require('./routes/kanyeBrandMentionsOverAllSongs');
+var kanyeBrandCategoriesBySong = require('./routes/kanyeBrandCategoriesBySong');
+var kanyeBrandCategoriesOverAllSongs = require('./routes/kanyeBrandCategoriesOverAllSongs');
 
 var app = express();
 app.d3 = require('d3');
@@ -28,8 +30,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/lyricsData', lyricsData);
-app.use('/kanyebySong', kanyeBrandMentionsBySong);
-app.use('/kanyeOverAllSongs', kanyeBrandMentionsOverAllSongs);
+app.use('/kanyeBrandsbySong', kanyeBrandMentionsBySong);
+app.use('/kanyeBrandsOverAllSongs', kanyeBrandMentionsOverAllSongs);
+app.use('/kanyeCategoriesBySong', kanyeBrandCategoriesBySong);
+app.use('/kanyeBrandCategoriesOverAllSongs', kanyeBrandCategoriesOverAllSongs);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
