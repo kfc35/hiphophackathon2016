@@ -1,5 +1,7 @@
 var path = require('path');
 var fs = require('fs');
+var stopwords = require('./stopwords');
+var stopword = require('stopword');
 
 /* Reads all lyric files and parses them */
 function readFiles(dirname, onFileContent, onError) {
@@ -55,7 +57,11 @@ function processFieldForWordCount(jsonContent, fieldName, countObjects) {
   var lyricsWithoutSpecialCharsAndDoubleSpaces = lyricsWithoutPhraseBreaks
                                                   .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()"]/g, "")
                                                   .replace(/\s{2,}/g," ");
-  var words = lyricsWithoutSpecialCharsAndDoubleSpaces.split(" ");
+  var words = stopword.removeStopwords(lyricsWithoutSpecialCharsAndDoubleSpaces, {
+    stopwords: stopwords.words,
+    inputSeparator: " ",
+  });
+
   for (var i = 0; i < words.length; i++) {
     var word = words[i];
     for (var j = 0; j < countObjects.length; j++) {
