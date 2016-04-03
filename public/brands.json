@@ -1,5 +1,6 @@
 [
   {
+    "id": "polo",
     "canonicalBrandName": "Polo",
     "brandSynonyms": [
       "Ralph",
@@ -10,21 +11,25 @@
     "category": "sportswear"
   },
   {
+    "id": "gap",
     "canonicalBrandName": "Gap",
     "brandSynonyms": [],
     "category": "sportswear"
   },
   {
+    "id": "bananarepublic",
     "canonicalBrandName": "Banana Republic",
     "brandSynonyms": [],
     "category": "sportswear"
   },
   {
+    "id": "oldnavy",
     "canonicalBrandName": "Old Navy",
     "brandSynonyms": [],
     "category": "sportswear"
   },
   {
+    "id": "jordanbrand",
     "canonicalBrandName": "Jordan Brand",
     "brandSynonyms": [
       "Jordans",
@@ -34,6 +39,7 @@
     "category": "sportswear"
   },
   {
+    "id": "nike",
     "canonicalBrandName": "Nike",
     "brandSynonyms": [
       "Swoosh",
@@ -46,6 +52,7 @@
     "category": "sportswear"
   },
   {
+    "id": "fila",
     "canonicalBrandName": "Fila",
     "brandSynonyms": [
       "Filas"
@@ -53,21 +60,25 @@
     "category": "sportswear"
   },
   {
+    "id": "adidas",
     "canonicalBrandName": "Adidas",
     "brandSynonyms": [],
     "category": "sportswear"
   },
   {
+    "id": "starter",
     "canonicalBrandName": "Starter",
     "brandSynonyms": [],
     "category": "sportswear"
   },
   {
+    "id": "gucci",
     "canonicalBrandName": "Gucci",
     "brandSynonyms": [],
     "category": "luxury"
   },
   {
+    "id": "louisvuitton",
     "canonicalBrandName": "Louis Vuitton",
     "brandSynonyms": [
       "Louis",
@@ -79,6 +90,7 @@
     "category": "luxury"
   },
   {
+    "id": "rolex",
     "canonicalBrandName": "Rolex",
     "brandSynonyms": [
       "Rollies",
@@ -95,6 +107,7 @@
     "category": "watches"
   },
   {
+    "id": "pasha",
     "canonicalBrandName": "Pasha",
     "brandSynonyms": [
       "Pashas"
@@ -102,6 +115,7 @@
     "category": "watches"
   },
   {
+    "id": "mercedesbenz",
     "canonicalBrandName": "Mercedes-Benz",
     "brandSynonyms": [
       "Benzes",
@@ -117,6 +131,7 @@
     "category": "luxury cars"
   },
   {
+    "id": "lexus",
     "canonicalBrandName": "Lexus",
     "brandSynonyms": [
       "Lex",
@@ -125,6 +140,7 @@
     "category": "luxury cars"
   },
   {
+    "id": "jacob",
     "canonicalBrandName": "Jacob",
     "brandSynonyms": [
       "Jacobs",
@@ -133,6 +149,7 @@
     "category": "jewelry"
   },
   {
+    "id": "cristal",
     "canonicalBrandName": "Cristal",
     "brandSynonyms": [
       "Cris",
