@@ -1,0 +1,128 @@
+[
+  {
+    "canonicalBrandName": "Gap",
+    "brandSynonyms": [],
+    "category": "sportswear"
+  },
+  {
+    "canonicalBrandName": "Banana Republic",
+    "brandSynonyms": [],
+    "category": "sportswear"
+  },
+  {
+    "canonicalBrandName": "Old Navy",
+    "brandSynonyms": [],
+    "category": "sportswear"
+  },
+  {
+    "canonicalBrandName": "Jordan Brand",
+    "brandSynonyms": [
+      "Jordans",
+      "Threes",
+      "Fours"
+    ],
+    "category": "sportswear"
+  },
+  {
+    "canonicalBrandName": "Nike",
+    "brandSynonyms": [
+      "Swoosh",
+      "Forces",
+      "Nikes",
+      "Airs",
+      "Nike's",
+      "Air Force Ones"
+    ],
+    "category": "sportswear"
+  },
+  {
+    "canonicalBrandName": "Fila",
+    "brandSynonyms": [
+      "Filas"
+    ],
+    "category": "sportswear"
+  },
+  {
+    "canonicalBrandName": "Adidas",
+    "brandSynonyms": [],
+    "category": "sportswear"
+  },
+  {
+    "canonicalBrandName": "Starter",
+    "brandSynonyms": [],
+    "category": "sportswear"
+  },
+  {
+    "canonicalBrandName": "Gucci",
+    "brandSynonyms": [],
+    "category": "luxury"
+  },
+  {
+    "canonicalBrandName": "Louis Vuitton",
+    "brandSynonyms": [
+      "Louis",
+      "Vuitton",
+      "LV",
+      "L-V"
+    ],
+    "category": "luxury"
+  },
+  {
+    "canonicalBrandName": "Rolex",
+    "brandSynonyms": [
+      "Rollies",
+      "Rolly",
+      "Rollys",
+      "Rollie",
+      "Rolexes",
+      "Rolexs"
+    ],
+    "category": "watches"
+  },
+  {
+    "canonicalBrandName": "Pasha",
+    "brandSynonyms": [
+      "Pashas"
+    ],
+    "category": "watches"
+  },
+  {
+    "canonicalBrandName": "Mercedes-Benz",
+    "brandSynonyms": [
+      "Benzes",
+      "Benzs",
+      "Mercedeses",
+      "CLK",
+      "Mercedes Benz",
+      "Mercedes Benzs",
+      "Mercedes-Benzs",
+      "Mercedes Benzes",
+      "Mercedes-Benzes"
+    ],
+    "category": "luxury cars"
+  },
+  {
+    "canonicalBrandName": "Lexus",
+    "brandSynonyms": [
+      "Lex",
+      "Lexuses"
+    ],
+    "category": "luxury cars"
+  },
+  {
+    "canonicalBrandName": "Jacob",
+    "brandSynonyms": [
+      "Jacobs",
+      "Jacob's"
+    ],
+    "category": "jewelry"
+  },
+  {
+    "canonicalBrandName": "Cristal",
+    "brandSynonyms": [
+      "Cris",
+      "of strings"
+    ],
+    "category": "alcohol"
+  }
+]
