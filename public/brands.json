@@ -1,5 +1,50 @@
 [
   {
+    "id": "range rover",
+    "canonicalBrandName": "Range Rover",
+    "brandSynonyms": [
+      "four dot six",
+      "rover",
+      "range rovers",
+      "rovers",
+      "4.6"
+    ],
+    "category": "luxury cars"
+  },
+  {
+    "id": "datsun",
+    "canonicalBrandName": "Datsun",
+    "brandSynonyms": [
+      "Datsuns"
+    ],
+    "category": "cars"
+  },
+  {
+    "id": "nissan",
+    "canonicalBrandName": "Nissan",
+    "brandSynonyms": [
+      "Nissan",
+      "Nissans",
+      "Altima",
+      "Altimas",
+      "Camry",
+      "Camrys",
+      "Camries"
+    ],
+    "category": "cars"
+  },
+  {
+    "id": "cartier",
+    "canonicalBrandName": "Cartier",
+    "brandSynonyms": [
+      "Carti",
+      "Cartis",
+      "Cartiers",
+      "Carties"
+    ],
+    "category": "jewelry"
+  },
+  {
     "id": "technomarine",
     "canonicalBrandName": "Techno Marine",
     "brandSynonyms": [
