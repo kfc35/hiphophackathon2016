@@ -7,7 +7,7 @@ function readBrands() {
 }
 
 /* Reads all lyric files and parses them */
-function readFiles(dirname, onFileContent, onError) {
+function readFiles() {
   var brandData = readBrands();
   //Read in all files names under this directory. TODO do this with another level of nested dirs for each album
 	var fileNames = fs.readdirSync(path.join(__dirname, "../public/lyrics/kanye/college_dropout")).filter(function(fileName) {

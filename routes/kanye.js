@@ -11,9 +11,19 @@ router.get('/', function(req, res, next) {
     var svg = produceGraph(window);
     res.send(svg.node().outerHTML);
   });
-  
-
 });
+
+function transformLyricDataForD3() {
+  var lyricsData = lyricsProcessingService.readFiles();
+  var root = {
+    "name": "CollegeDropout",
+    "children": [
+    ]
+  };
+  for (var i = 0; i < lyricsData.length; i++) {
+    var lyricData
+  }
+}
 
 /*
   code taken from
