@@ -49,12 +49,12 @@ function processLyricalContent(jsonContent, brandData) {
 
   return {
     songTitle: jsonContent.songTitle,
-    totalCounts: totalCounts,
-    introCounts: introCounts,
-    verseCounts: verseCounts,
-    chorusCounts: chorusCounts,
-    bridgeCounts: bridgeCounts,
-    outroCounts: outroCounts
+    totalCounts: totalCounts
+    //introCounts: introCounts,
+    //verseCounts: verseCounts,
+    //chorusCounts: chorusCounts,
+    //bridgeCounts: bridgeCounts,
+    //outroCounts: outroCounts
     //brandTotalCounts: brandTotalCounts
   };
 }
