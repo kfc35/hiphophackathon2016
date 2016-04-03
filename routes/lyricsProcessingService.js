@@ -13,7 +13,6 @@ function readFiles(dirname, onFileContent, onError) {
   var lyricsData = fileNames.map(function(fileName) {
 		var content = fs.readFileSync(path.join(__dirname, "../public/lyrics/kanye/college_dropout/" + fileName));
     jsonContent = JSON.parse(content);
-    console.log("Json Content: " + jsonContent);
     return processLyricalContent(jsonContent);
 	});
   return lyricsData;
@@ -55,7 +54,7 @@ function processFieldForWordCount(jsonContent, fieldName, countObjects) {
   }
   var lyricsWithoutPhraseBreaks = lyrics.replace(/\//g, " ");
   var lyricsWithoutSpecialCharsAndDoubleSpaces = lyricsWithoutPhraseBreaks
-                                                  .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()"]/g, "")
+                                                  .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()"]/g, " ")
                                                   .replace(/\s{2,}/g," ");
   var words = stopword.removeStopwords(lyricsWithoutSpecialCharsAndDoubleSpaces, {
     stopwords: stopwords.words,
