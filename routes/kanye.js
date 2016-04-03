@@ -7,12 +7,8 @@ var router = express.Router();
 /* GET the post processed lyrics data. */
 router.get('/', function(req, res, next) {
   d3 = req.app.d3;
-  html = '<!doctype html><html></html>';
-  console.log("hello");
-  document = req.app.jsdom.env(html, function(error, window) {
-    console.log("im in jsdom");
+  document = req.app.jsdom.env('', function(error, window) {
     var svg = produceGraph(window);
-    console.log(svg);
     res.send(svg.node().outerHTML);
   });
   
@@ -25,7 +21,7 @@ router.get('/', function(req, res, next) {
   except where i put comments.
 */
 function produceGraph(window) {
-  var diameter = 960,
+  var diameter = 1200,
     format = d3.format(",d"),
     color = d3.scale.category20c();
 
