@@ -118,11 +118,10 @@ function processLyricForBrandCount(lyrics, brandData, brandTotalCounts) {
     for (var j = 0; j < words.length; j++) {
       var word = words[j];
       //words are not double counted, since lyrics have the phrases removed in previous pass
-      for (var k = 0; k < brandSearchTermsWithoutSpaces; k++) {
+      for (var k = 0; k < brandSearchTermsWithoutSpaces.length; k++) {
         var brandSearchTermWithoutSpaces = brandSearchTermsWithoutSpaces[k];
-        console.log("comparing " + brandSearchTermWithoutSpaces + " and " + word);
         if (brandSearchTermWithoutSpaces.toLowerCase() === word.toLowerCase()) {
-            brandTotalCounts[brand.id]++;
+            brandTotalCounts[brand.id] += 1;
         }
       }
     }
