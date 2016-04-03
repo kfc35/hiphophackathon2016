@@ -67,6 +67,7 @@ function processFieldForWordCount(jsonContent, fieldName, countObjects, brandDat
   var lyricsWithoutPhraseBreaks = lyrics.replace(/\//g, " ");
   var lyricsWithoutSpecialCharsAndDoubleSpaces = lyricsWithoutPhraseBreaks
                                                   .replace(/[.,\/#!?$%\^&\*;:{}=\_`~()"]/g, " ")
+                                                  .replace(/[']/g, "")
                                                   .replace(/\s{2,}/g," ");
   /* Should check for brand counts HERE, before spaces are removed.
   */
@@ -78,10 +79,9 @@ function processLyricForTotalCounts(lyrics, countObjects) {
   var words = lyrics.split(" ");
   for (var i = 0; i < words.length; i++) {
     var word = words[i];
-    if (stopwords.words.indexOf(word.toLowerCase()) !== -1 || 
-        stopwords.words.indexOf(word.replace(/'/g, "").toLowerCase()) !== -1) {
-          continue;
-        }
+    if (stopwords.words.indexOf(word.toLowerCase()) !== -1) {
+      continue;
+    }
     for (var j = 0; j < countObjects.length; j++) {
       var countObject = countObjects[j];
       var index = word.toLowerCase();
@@ -104,7 +104,7 @@ function processLyricForBrandCount(lyrics, brandData, brandTotalCounts) {
         brandSearchTermsWithoutSpaces.push(brandSearchTerm);
         continue;
       }
-      var brandSearchTermRegex = new RegExp(" " + brandSearchTerm + " ", "ig");
+      var brandSearchTermRegex = new RegExp(" " + brandSearchTerm.replace(/[']/g, "") + " ", "ig");
       var matchResult = lyrics.match(brandSearchTermRegex);
       if (matchResult) {
         //console.log("more than one match result!");
@@ -120,7 +120,7 @@ function processLyricForBrandCount(lyrics, brandData, brandTotalCounts) {
       //words are not double counted, since lyrics have the phrases removed in previous pass
       for (var k = 0; k < brandSearchTermsWithoutSpaces.length; k++) {
         var brandSearchTermWithoutSpaces = brandSearchTermsWithoutSpaces[k];
-        if (brandSearchTermWithoutSpaces.toLowerCase() === word.toLowerCase()) {
+        if (brandSearchTermWithoutSpaces.toLowerCase().replace(/[']/g, "") === word.toLowerCase().replace(/[']/g, "")) {
             brandTotalCounts[brand.id] += 1;
         }
       }
