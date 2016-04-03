@@ -1,5 +1,28 @@
 [
   {
+    "id": "technomarine",
+    "canonicalBrandName": "Techno Marine",
+    "brandSynonyms": [
+      "Techno Marines",
+      "Technomarines",
+      "Techno-marines",
+      "Techno-marine",
+      "Technomarine"
+    ],
+    "category": "watches"
+  },
+  {
+    "id": "pellepelle",
+    "canonicalBrandName": "Pelle Pelle",
+    "brandSynonyms": [
+      "Pelle",
+      "Pelle-Pelle",
+      "Pelles",
+      "Pelle-Pelles"
+    ],
+    "category": "sportswear"
+  },
+  {
     "id": "polo",
     "canonicalBrandName": "Polo",
     "brandSynonyms": [
